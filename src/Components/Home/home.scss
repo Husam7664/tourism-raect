@@ -11,7 +11,7 @@
 }
 
 .home {
-  height: 70vh;
+  height: 80vh;
   background: url(../../Assets/travel.jpg);
   background-position: center;
   background-size: cover;
@@ -72,24 +72,30 @@
         font-size: 13px;
         padding-bottom: 0.4rem;
       }
-    }
-    input {
-      width: 100%;
-      background: var(--inputColor);
-      border-radius: 10px;
-      border: none;
-      padding: 10px;
-      font-size: 13px;
-      font-weight: 500px;
-
-      &::placeholder {
+      input {
+        width: 100%;
+        background: var(--inputColor);
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
         font-size: 13px;
-        opacity: 0.5;
-        font-weight: 400;
+        font-weight: 500px;
+
+        &::placeholder {
+          font-size: 13px;
+          opacity: 0.5;
+          font-weight: 400;
+        }
+        &:focus {
+          overflow: none;
+        }
       }
-      &:focus {
-        overflow: none;
-      }
+    }
+    .btn {
+      width: 100%;
+      padding: 0.6rem 1.5rem;
+      color: var(--WhiteColor);
+      font-weight: 600;
     }
   }
 }

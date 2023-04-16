@@ -11,7 +11,7 @@
 }
 
 .home {
-  height: 70vh;
+  height: 80vh;
   background: url(../../Assets/travel.jpg);
   background-position: center;
   background-size: cover;
@@ -71,7 +71,9 @@
   font-size: 13px;
   padding-bottom: 0.4rem;
 }
-.home .secContainer input {
+.home .secContainer .locationDiv input,
+.home .secContainer .distDiv input,
+.home .secContainer .priceDiv input {
   width: 100%;
   background: var(--inputColor);
   border-radius: 10px;
@@ -80,16 +82,26 @@
   font-size: 13px;
   font-weight: 500px;
 }
-.home .secContainer input::-moz-placeholder {
+.home .secContainer .locationDiv input::-moz-placeholder, .home .secContainer .distDiv input::-moz-placeholder, .home .secContainer .priceDiv input::-moz-placeholder {
   font-size: 13px;
   opacity: 0.5;
   font-weight: 400;
 }
-.home .secContainer input::placeholder {
+.home .secContainer .locationDiv input::placeholder,
+.home .secContainer .distDiv input::placeholder,
+.home .secContainer .priceDiv input::placeholder {
   font-size: 13px;
   opacity: 0.5;
   font-weight: 400;
 }
-.home .secContainer input:focus {
+.home .secContainer .locationDiv input:focus,
+.home .secContainer .distDiv input:focus,
+.home .secContainer .priceDiv input:focus {
   overflow: none;
+}
+.home .secContainer .btn {
+  width: 100%;
+  padding: 0.6rem 1.5rem;
+  color: var(--WhiteColor);
+  font-weight: 600;
 }/*# sourceMappingURL=home.css.map */
